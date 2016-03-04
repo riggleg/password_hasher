@@ -21,7 +21,7 @@ Or install it yourself as:
 password = "goodpass"
 hashed_password = PasswordHasher.hash_password(password)
 #hashed_password == something like "sha1:1000:9NYDQj80ksetV+0uW/6VAJwXKTGDqKyv:SnRzqabSk/Kpmb9C109NIv+zbHArz4kg"
-validated = PasswordHasher.validate_password("goodpass", hashed_password)
+validated = PasswordHasher.validate_password(password, hashed_password)
 #validated == true
 ```
 

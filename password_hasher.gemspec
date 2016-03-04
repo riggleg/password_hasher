@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Simple password hashing library.}
   spec.description   = %q{This gem was made from a preexisting library.  I did not write the code.  I just made it a gem so I could share it between projects.}
-  spec.homepage      = "https://crackstation.net/hashing-security.htm"
+  spec.homepage      = "https://github.com/riggleg/password_hasher"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
