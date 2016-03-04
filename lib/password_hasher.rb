@@ -80,5 +80,9 @@ module PasswordHasher
       @@allPass = false
     end
   end
-
+  class <<self  
+    alias_method :create_hash, :createHash
+    alias_method :validate_hash, :validatePassword
+    alias_method :hash_password, :createHash
+  end
 end
